@@ -14,9 +14,9 @@ const otroContador = counter()
 otroContador()      // 1
 otroContador()      // 2 */
 function counter() {
-  let contador = 0;
-  return function (){
-      contador ++;
+  let contador = 0;  //Declaramos e inicializamos el contador
+  return function (){  //=> función que debemos retornar
+      contador ++;     // => Incremento del contador en la función retornada, en el primer valor se convierte en 1
       return contador;
   };
 }
