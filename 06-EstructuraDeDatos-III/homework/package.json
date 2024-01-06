@@ -1,7 +1,7 @@
 {
   "name": "06-ds-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "## 📒 Temas de la clase",
   "scripts": {
     "test": "jest --collectCoverage=false DataStructureIII.test.js",
     "grade": "jest --useStderr --json --outputFile=./tests/result.json"
@@ -10,5 +10,9 @@
     "jest": "^27.5.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "homework.js",
+  "directories": {
+    "test": "tests"
+  }
 }

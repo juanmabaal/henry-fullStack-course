@@ -19,20 +19,31 @@ function nFactorial(n) {
   //1. Debe retornar el factorial de n
   if (n === 0 || n === 1){ 
     return 1;
-    } 
+    } else if(n < 2) {
+      throw Error('Introduce solo números naturales') //clase Error o type Error
+    }
     const nextNum = n - 1; 
-
+    console.log('n: ', n);
+    console.log('next Num: ', nextNum)
     return n * nFactorial(nextNum);
 }
 
+nFactorial(-5)
+
 
   function nFibonacci(n) {
-    if (n === 0 || n === 1) {
+    if(n < 0) return 'Solo números Naturales';
+    if (n < 2) {
         return n;
     } 
+    console.log('n : ', n)
+    console.log('n - 1: ', n -1)
+    console.log('n - 2: ', n -2)
+
     return  nFibonacci(n - 1) + nFibonacci(n - 2);
+    
   }
-  console.log(nFibonacci(7))
+  console.log(nFibonacci(3))
 
  //n es la posición
 
